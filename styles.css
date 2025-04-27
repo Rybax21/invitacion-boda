@@ -1,0 +1,440 @@
+/* ============================ */
+/* SECCIÓN 1: CABECERA PASSPORT */
+/* ============================ */
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: #3b1f1f;
+  background-color: #f8f4f0;
+  overflow-x: hidden;
+}
+
+.hero {
+  background-color: #520b0b;
+  background-image: repeating-linear-gradient(45deg, #520b0b 0px, #520b0b 10px, #400909 10px, #400909 20px);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.titulo-passport {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+}
+
+.brujula {
+  width: 120px;
+  margin: 20px 0;
+}
+
+.nombres {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.fecha {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.4em;
+  margin-top: 0.5rem;
+}
+
+/* =========================================== */
+/* SECCIÓN 2: VIAJE DE NUESTRA VIDA (CONTENIDO) */
+/* =========================================== */
+
+.map-section {
+
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.flash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer-polaroid {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(-50px) rotateX(15deg) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0) rotateX(0) scale(1);
+  }
+}
+
+.info-boda {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border:1px solid rgba(255, 255, 255, 0.3);
+}
+
+.subtitulo {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 0;
+  color: #2c1c0f;
+  font-family: 'Playfair Display', serif;
+}
+
+.titulo {
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  color:#3b1f1f;
+  font-family: 'Playfair Display', serif;
+}
+
+.foto-pareja {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.foto-pareja img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px 20px 50px 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: aparecer-polaroid 1.2s ease forwards;
+}
+
+.detalles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.bloque {
+  background: rgba(255, 254, 254, 0.95);
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 280px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  margin-top: 100px;
+}
+
+.bloque:hover {
+  transform: translateY(-5px);
+}
+
+.bloque img {
+
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.bloque h3 {
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #3b1f1f;
+  font-family: 'Playfair Display', serif;
+}
+
+.hora {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #3b1f1f;
+}
+
+.bloque p {
+  margin: 4px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.bloque a {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  background-color: #3b1f1f;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  font-family: 'Playfair Display', serif;
+}
+
+.bloque a:hover {
+  background-color: #5a3232;
+}
+/* ===================== */
+/* EFECTO AVIÓN VOLADOR */
+/* ===================== */
+
+
+
+
+.cuenta-atras {
+  text-align: center;
+  padding: 100px 20px;
+  color: #5a2a2a;
+}
+
+.sello-brujula {
+  width: 120px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+
+
+.faltan-titulo {
+  font-size: 1rem;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+.reloj {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.reloj div {
+  font-family: 'Playfair Display', serif;
+}
+
+.reloj span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  color: #ffffff;
+}
+
+.reloj p {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.momentos-boda {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.momento {
+  flex: 1 1 120px;
+  background: rgba(241, 225, 225, 0.308);
+  padding: 15px; /* Aumentado para mayor espacio */
+  border-radius: 10px;
+  max-width: 150px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  margin-top: 50px;
+  height: 180px; /* Ajustado el alto para más espacio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centrar contenido dentro del contenedor */
+}
+
+.momentos-boda img {
+  width: 80px; /* Ajustado el tamaño de las imágenes */
+  height: auto;
+  margin-bottom: 10px;
+  filter: brightness(0) invert(1);
+}
+.momento h3 {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+}
+.momento p {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+.momento:hover {
+  transform: translateY(-5px); /* Efecto al hacer hover */
+}
+@media (min-width: 768px) {
+  .momentos-boda img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .momentos-boda img {
+    width: 120px; /* Aumentado el tamaño para pantallas grandes */
+  }
+}
+.cuenta-atras {
+  padding: 100px 20px;
+  position: relative;
+}
+.fondo-compartido {
+  position: relative;
+  z-index: 0;
+}
+
+.fondo-compartido::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('fondo2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 1;
+}
+.confirmar-asistencia {
+  background-color: #eee6d9;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.titulo-confirmacion {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  color: #3b1f1f;
+}
+
+.formulario-asistencia {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-asistencia input,
+.formulario-asistencia select,
+.formulario-asistencia textarea {
+  padding: 12px;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario-asistencia textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.formulario-asistencia button {
+  padding: 15px;
+  background-color: #5a2a2a;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-asistencia button:hover {
+  background-color: #3b1f1f;
+}
+
+.opciones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+.polaroid-contenedor {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.marco-polaroid {
+  width: 100%;
+  display: block;
+}
+
+.foto-incrustada {
+  position: absolute;
+  top: 11.5%;
+  left: 7.5%;
+  width: 85%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.texto-polaroid {
+  position: absolute;
+  bottom: 12%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive; /* o cualquier fuente manuscrita */
+  font-size: 14px;
+  color: #111;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+#canvasAvion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 106vw;
+  height: 180vh;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent;
+}

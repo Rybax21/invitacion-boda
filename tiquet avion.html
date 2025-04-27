@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmación - Tu Boleto</title>
+  <style>
+    /* Estilos para el ticket */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .ticket {
+      background: #fff;
+      padding: 30px;
+      width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .ticket h2 {
+      color: #4CAF50;
+    }
+    .ticket p {
+      font-size: 18px;
+    }
+    .ticket .btn {
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ticket">
+    <h2>¡Tu Boleto de Confirmación!</h2>
+    <p><strong>Nombre:</strong> <?!= nombre ?></p>
+    <p><strong>Parentesco:</strong> <?!= parentesco ?></p>
+    <p><strong>Número de invitados:</strong> <?!= numeroInvitados ?></p>
+    <p><strong>Teléfono:</strong> <?!= telefono ?></p>
+    <p><strong>Elige Chozo:</strong> <?!= chozo ?></p>
+    <p><strong>Canción solicitada:</strong> <?!= cancion ?></p>
+    <p><strong>Necesidades adicionales:</strong> <?!= mensaje ?></p>
+    <a href="index.html" class="btn">Volver al Inicio</a>
+  </div>
+
+</body>
+</html>
